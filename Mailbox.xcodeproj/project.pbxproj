@@ -13,6 +13,7 @@
 		7BEFD2E719FAC75D0032DF80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFD2E619FAC75D0032DF80 /* Images.xcassets */; };
 		7BEFD2EA19FAC75D0032DF80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BEFD2E819FAC75D0032DF80 /* LaunchScreen.xib */; };
 		7BEFD2F619FAC75D0032DF80 /* MailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFD2F519FAC75D0032DF80 /* MailboxTests.swift */; };
+		7BEFD30019FAE7450032DF80 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFD2FF19FAE7450032DF80 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7BEFD2EF19FAC75D0032DF80 /* MailboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEFD2F419FAC75D0032DF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BEFD2F519FAC75D0032DF80 /* MailboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxTests.swift; sourceTree = "<group>"; };
+		7BEFD2FF19FAE7450032DF80 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7BEFD2DF19FAC75D0032DF80 /* AppDelegate.swift */,
 				7BEFD2E119FAC75D0032DF80 /* ViewController.swift */,
 				7BEFD2E319FAC75D0032DF80 /* Main.storyboard */,
+				7BEFD2FF19FAE7450032DF80 /* FeedViewController.swift */,
 				7BEFD2E619FAC75D0032DF80 /* Images.xcassets */,
 				7BEFD2E819FAC75D0032DF80 /* LaunchScreen.xib */,
 				7BEFD2DD19FAC75D0032DF80 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BEFD2E219FAC75D0032DF80 /* ViewController.swift in Sources */,
+				7BEFD30019FAE7450032DF80 /* FeedViewController.swift in Sources */,
 				7BEFD2E019FAC75D0032DF80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				7BEFD2FB19FAC75D0032DF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BEFD2FC19FAC75D0032DF80 /* Build configuration list for PBXNativeTarget "MailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				7BEFD2FE19FAC75D0032DF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

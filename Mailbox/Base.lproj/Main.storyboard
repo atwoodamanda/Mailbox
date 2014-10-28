@@ -9,15 +9,15 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="FeedViewController" customModule="Mailbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1346"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1432"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yqV-6T-vmi">
-                                <rect key="frame" x="0.0" y="65" width="320" height="1346"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="1432"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed" id="NJy-bQ-Byf">
-                                        <rect key="frame" x="0.0" y="79" width="320" height="1202"/>
+                                        <rect key="frame" x="0.0" y="165" width="320" height="1202"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" id="vIb-rS-Rep">
@@ -28,6 +28,37 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" id="VyA-OH-q6R">
+                                        <rect key="frame" x="0.0" y="79" width="320" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" id="Lrs-NH-Xut">
+                                                <rect key="frame" x="2" y="0.0" width="320" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="S63-bp-EDQ" appends="YES" id="iiu-wy-Fle"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="later_icon" id="TRt-lj-muj">
+                                                <rect key="frame" x="361" y="36" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archive_icon" id="Oul-yC-tsr">
+                                                <rect key="frame" x="-56" y="30" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_icon" id="WAA-mP-KLH">
+                                                <rect key="frame" x="-56" y="30" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_icon" id="DpX-Xh-0XQ">
+                                                <rect key="frame" x="361" y="36" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.2056352676" green="0.22941267639999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" id="7Er-J4-ZQU">
@@ -46,27 +77,61 @@
                                 <rect key="frame" x="206" y="33" width="25" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reschedule" id="55R-7M-4Wi">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IMZ-7E-tui">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uWn-aZ-acn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1346"/>
+                    <size key="freeformSize" width="320" height="1432"/>
                     <connections>
+                        <outlet property="button" destination="IMZ-7E-tui" id="ZZe-Le-X5C"/>
+                        <outlet property="deleteImage" destination="WAA-mP-KLH" id="e7K-pp-Dmd"/>
+                        <outlet property="feed" destination="NJy-bQ-Byf" id="HB5-bw-hzx"/>
+                        <outlet property="imageView" destination="Lrs-NH-Xut" id="iIc-1r-qJ9"/>
+                        <outlet property="leftImage" destination="Oul-yC-tsr" id="MW6-1i-7fS"/>
+                        <outlet property="listImage" destination="DpX-Xh-0XQ" id="Nv2-q3-NP7"/>
+                        <outlet property="rescheduleImage" destination="55R-7M-4Wi" id="A07-jo-fXq"/>
+                        <outlet property="rightImage" destination="TRt-lj-muj" id="8ga-Gd-7oC"/>
                         <outlet property="scrollView" destination="yqV-6T-vmi" id="Ybd-La-km3"/>
+                        <outlet property="viewView" destination="VyA-OH-q6R" id="Hzc-Tz-MXn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="S63-bp-EDQ" userLabel="Message Pan">
+                    <connections>
+                        <action selector="onMessagePan:" destination="vXZ-lx-hvc" id="2FC-MW-BZD"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162" y="330"/>
         </scene>
     </scenes>
     <resources>
+        <image name="archive_icon" width="25" height="25"/>
         <image name="archive_nav_icon" width="25" height="20"/>
+        <image name="delete_icon" width="25" height="25"/>
         <image name="feed" width="320" height="1202"/>
         <image name="help_label" width="320" height="37"/>
+        <image name="later_icon" width="25" height="25"/>
         <image name="later_nav_icon" width="25" height="20"/>
+        <image name="list_icon" width="25" height="25"/>
         <image name="mail_nav_icon" width="25" height="20"/>
+        <image name="message" width="320" height="86"/>
         <image name="nav" width="320" height="65"/>
+        <image name="reschedule" width="320" height="568"/>
         <image name="search" width="320" height="42"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
